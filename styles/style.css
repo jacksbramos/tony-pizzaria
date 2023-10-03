@@ -17,7 +17,6 @@ header{
     top: 60px;
     left: 80px;
     right: 80px;
-    background-color: white;
     display: flex;
     justify-content: space-between;
 }
@@ -76,8 +75,10 @@ header .botao{
 }
 
 main{
+    background-color: var(--cor-secundaria);
+}
+
+section{
     height: 100vh;
-    background-color: lightblue
-
-
+    width: 100%;
 }

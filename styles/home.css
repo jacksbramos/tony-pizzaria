@@ -1,0 +1,31 @@
+.home{
+
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.conteudo-container{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-container h2{
+    width: 558px;
+    height: 513px;
+    font-size: 4rem;
+    font-weight: 400;
+    font-style: italic;
+}    
+
+.destaque-container{
+    background-color: blueviolet;
+    height: 260px;
+
+}
