@@ -1,62 +1,328 @@
 <!DOCTYPE html>
-<html lang="pt.br">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@100;400;600&family=Pattaya&family=Poppins:wght@100;200;400;600;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@100;200;400;600;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/produto.css">
     <link rel="stylesheet" href="./styles/home.css">
     <link rel="stylesheet" href="./styles/cardapio.css">
-    <link rel="stylesheet" href="./styles/servico.css">
+    <link rel="stylesheet" href="./styles/servicos.css">
     <title>Tony Pizzaria</title>
 </head>
+
 <body>
     <header>
         <div class="logo-container">
-            <img src="./img/logo.png" alt="logo tony pizzaria">
-            <p>Tony Pizzaria</p>
+            <img src="./img/logo pizzaria.svg" alt="logo tony pizzaria">
         </div>
         <nav class="menu">
             <ul>
                 <li>
-                    <a href="#">Home</a>
+                    <a href="#home">Home</a>
                 </li>
                 <li>
-                    <a href="#">Cardápio</a>
+                    <a href="#cardapio">Cardápio</a>
                 </li>
                 <li>
-                    <a href="#">Serviços</a>
+                    <a href="#servicos">Serviços</a>
                 </li>
                 <li>
-                    <a href="#">Contato</a>
+                    <a href="#contato">Contato</a>
                 </li>
             </ul>
         </nav>
         <div class="botao-container">
-         <div class="botao">
-            <img src="./img/logo boneco.png" alt="icone usuario">
-            <p>LOGIN</p>
-         </div>
-
+            <div class="botao">
+                <img src="./img/logo boneco certo.svg" alt="Icone de usuário">
             </div>
         </div>
     </header>
     <main>
-        <section class="home">
+        <section class="home" id="home">
             <div class="conteudo-container">
-                <h2>Não é apenas uma Pizza, é uma experiência!</h2>
-                <img src="./img/pizza home.png" alt="pizza">
+                <div class="texto">
+                    <h2>
+                        Não é apenas uma <span class="texto-laranja"> Pizza </span>, é uma experiência!
+                    </h2>
+                </div>
+                <div>
+                    <img src="./img/pizza home.png" alt="pizza">
+                </div>
             </div>
-            <div class="destaque-container"></div>
+            <div class="destaque-container">
+                <div class="produto">
+                    <img class="add" src="./img/add.svg" alt="">
+                    <img src="./img/pizza queijo.png" alt="">
+                    <div class="info">
+                        <div class="info-texto">
+                            Pizza de calabreza com queijo
+                        </div>
+                        <div class="info-preco">
+                            R$ 16,00
+                        </div>
+                    </div>
+                </div>
+                <div class="produto">
+                    <img  class="add" src="./img/add.svg" alt="">
+                    <img src="./img/calabresa.png" alt="">
+                    <div class="info">
+                        <div class="info-texto">
+                            Pizza de mussarela e presunto
+                        </div>
+                        <div class="info-preco">
+                            R$ 36,00
+                        </div>
+                    </div>
+                </div>
+                <div class="produto">
+                    <img  class="add" src="./img/add.svg" alt="">
+                    <img src="./img/pizza margarita.png" alt="">
+                    <div class="info">
+                        <div class="info-texto">
+                            Pizza de frango com catupiry
+                        </div>
+                        <div class="info-preco">
+                            R$ 46,00
+                        </div>
+                    </div>
+                </div>
+                <div class="produto">
+                    <img class="add" src="./img/add.svg" alt="">
+                    <img src="./img/calabresa.png" alt="">
+                    <div class="info">
+                        <div class="info-texto">
+                            Pizza portuguesa
+                        </div>
+                        <div class="info-preco">
+                            R$ 55,00
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="cardapio"></section>
-        <section class="serviços"></section>
-        <section class="contato"></section>
+        <section class="cardapio" id="cardapio">
+            <div class="cardapio-titulo">
+                <img src="./img/logo.png" alt="Logo Tony Pizzaria">
+                <h3>CARDÁPIO</h3>
+            </div>
+            <div class="cardapio-favoritas">
+                <div class="header-area">
+                    <p>Minhas pizzas favoritas</p>
+                    <p>VER TUDO</p>
+                </div>
+                <div class="produtos-container">
+                    <div class="produto">
+                        <img class="add" src="./img/add.svg" alt="">
+                        <img src="./img/pizza queijo.png" alt="pizza1">
+                        <div class="info">
+                            <div class="info-texto">
+                                Pizza de calabresa com queijo
+                            </div>
+                            <div class="info-preco">
+                                R$ 40,00
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <img class="add" src="./img/add.svg" alt="">
+                        <img src="./img/calabresa.png" alt="pizza1">
+                        <div class="info">
+                            <div class="info-texto">
+                                Pizza de calabresa com queijo
+                            </div>
+                            <div class="info-preco">
+                                R$ 36,00
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <img class="add" src="./img/add.svg" alt="">
+                        <img src="./img/pizza queijo.png" alt="pizza1">
+                        <div class="info">
+                            <div class="info-texto">
+                                Pizza de calabresa com queijo
+                            </div>
+                            <div class="info-preco">
+                                R$ 40,00
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <img class="add" src="./img/add.svg" alt="">
+                        <img src="./img/pizza margarita.png" alt="pizza1">
+                        <div class="info">
+                            <div class="info-texto">
+                                Pizza de calabresa com queijo
+                            </div>
+                            <div class="info-preco">
+                                R$ 60,00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardapio-menu">
+                <div class="header-area">
+                    <p>Menu</p>
+                    <p>VER TUDO</p>
+                </div>
+                <div class="produtos-container">
+                    <div class="produto">
+                        <img class="add" src="./img/add.svg" alt="">
+                        <img src="./img/calabresa.png" alt="pizza1">
+                        <div class="info">
+                            <div class="info-texto">
+                                Pizza de calabresa com queijo
+                            </div>
+                            <div class="info-preco">
+                                R$ 36,00
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <img class="add" src="./img/add.svg" alt="">
+                        <img src="./img/pizza queijo.png" alt="pizza1">
+                        <div class="info">
+                            <div class="info-texto">
+                                Pizza de calabresa com queijo
+                            </div>
+                            <div class="info-preco">
+                                R$ 40,00
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <img class="add" src="./img/add.svg" alt="">
+                        <img src="./img/pizza margarita.png" alt="pizza1">
+                        <div class="info">
+                            <div class="info-texto">
+                                Pizza de calabresa com queijo
+                            </div>
+                            <div class="info-preco">
+                                R$ 60,00
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <img class="add" src="./img/add.svg" alt="">
+                        <img src="./img/calabresa.png" alt="pizza1">
+                        <div class="info">
+                            <div class="info-texto">
+                                Pizza de calabresa com queijo
+                            </div>
+                            <div class="info-preco">
+                                R$ 36,00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardapio-bebidas">
+                <div class="header-area">
+                    <p>Bebidas</p>
+                    <p>VER TUDO</p>
+                </div>
+                <div class="produtos-container">
+                    <div class="bebida">
+                        <img class="add" src="./img/add.svg" alt="">
+                        <img src="./img/coca.png" alt="bebida">
+                        <div class="info">
+                            <div class="info-texto">
+                    
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <div class="bebida">
+                        <img class="add" src="./img/add.svg" alt="">
+                        <img src="./img/coca.png" alt="bebida">
+                        <div class="info">
+                            <div class="info-texto">
+                            
+                            </div>
+                            <div class="info-preco">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bebida">
+                        <img class="add" src="./img/add.svg" alt="">
+                        <img src="./img/coca.png" alt="bebida">
+                        <div class="info">
+                            <div class="info-texto">
+                            
+                            </div>
+                            <div class="info-preco">
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bebida">
+                        <img class="add" src="./img/add.svg" alt="">
+                        <img src="./img/coca.png" alt="bebida">
+                        <div class="info">
+                            <div class="info-texto">
+                            
+                            </div>
+                            <div class="info-preco">
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bebida">
+                        <img class="add" src="./img/add.svg" alt="">
+                        <img src="./img/coca.png" alt="bebida">
+                        <div class="info">
+                            <div class="info-texto">
+                            
+                            </div>
+                            <div class="info-preco">
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            </div>
+        </section>
+        <section class="servicos" id="servicos">
+            <div class="servicos-titulo">
+                <img src="./img/logo.png" alt="">
+                <h3>SERVIÇOS</h3>
+            </div>
+            <div class="servicos-conteudo">
+                <div class="fast-food servico">
+                    <img src="./img/fast-food.png" alt="servico-icon">
+                    <h4 class="servico-titulo">Fast Food</h4>
+                    <p class="servico-texto">ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum nemo iste nobis in provident cupiditate totam eaque perspiciatis, maiores, sapiente temporibus quae corrupti tempora quidem itaque eos ducimus cum culpa.</p>
+                </div>
+                <div class="drive-trhu servico">
+                    <img src="./img/drive-thru.png" alt="servico-icon">
+                    <h4 class="servico-titulo">Drive Trhu</h4>
+                    <p class="servico-titulo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi iusto cumque quia pariatur cupiditate impedit, at explicabo reiciendis laboriosam ipsam vitae aspernatur asperiores magni doloremque, consectetur eaque blanditiis dolor corporis!</p>
+                </div>
+                <div class="deliveries servico">
+                    <img src="./img/delivery.png" alt="servico-icon">
+                    <h4 class="servico-titulo">Deliveries</h4>
+                    <p class="servico-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt alias minus suscipit ab. Pariatur, rem. Iure nisi non nulla, quaerat quas, doloribus unde, soluta eveniet similique consequatur fugit illum debitis!</p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer></footer>
+</body>
+
+</html>
 </body>
 </html>
